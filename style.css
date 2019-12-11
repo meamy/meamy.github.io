@@ -4,7 +4,7 @@ yellow-orange:		#ffbc00
 dusty-rose:		#ff9966
 */
 
-body {margin: 16px; margin-top:100px; font-family: Spectral, serif; background: #ffffe6;}
+body {margin: 16px; margin-top:16px; font-family: Spectral, serif; background: #ffffe6;}
 
 a {color: red; text-decoration: none;}
 a[href]:hover {text-decoration: underline;}
