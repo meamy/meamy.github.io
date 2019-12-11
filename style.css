@@ -1,4 +1,4 @@
-body {margin: 16px; margin-top:100px; font-family: Spectral;}
+body {margin: 16px; margin-top:100px; font-family: Spectral, serif;}
 
 a {color: red; text-decoration: none;}
 a[href]:hover {text-decoration: underline;}
@@ -31,7 +31,7 @@ ul ul {margin-top: 0; margin-bottom: 0;}
 
 /* Papers */
 .plist {padding:0; margin:0;}
-.plist li {margin-top: .75em; list-style-type: none; list-style-position: inside; margin-left: 1em;}
+.plist li {margin-top: .5em; list-style-type: none; list-style-position: inside; margin-left: 1em;}
 
 .title {font-style: italic; color: #606060;}
 .citations {padding:0; margin:0;}
