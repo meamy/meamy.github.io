@@ -12,7 +12,7 @@ a {color: red; text-decoration: none;}
 a[href]:hover {text-decoration: underline;}
 
 h1 {font-size: 200%; margin: 0; background: #ffbc00; font-family: Spectral;}
-h2 {font-size: 100%; margin: 0; margin-top: 1em; font-family: Spectral;}
+h2 {font-size: 130%; margin: 0; margin-top: 1em; font-family: Spectral;}
 
 p {margin-top: 0.6em; margin-bottom: 0;}
 
@@ -39,20 +39,20 @@ ul ul {margin-top: 0; margin-bottom: 0;}
 
 /* Papers */
 .plist {padding:0; margin:0;}
-.plist li {margin-top: .5em; list-style-type: none; list-style-position: inside; margin-left: 1em;}
+.plist li {margin-top: .5em; list-style-type: none; list-style-position: inside; margin-left: 1em; padding: 5px}
 
 .title {font-style: italic; color: #0086B3;}
 .citations {padding:0; margin:0;}
 .citations li {margin: 0; list-style-position: inside; list-style-type: disc; margin-left: 1em; text-indent:-.9em;}
 
-.abstract {color:gray; margin-left:2em}
+.abstract {color:gray; margin-left:1em}
 
 /* Misc */
 .person {color: #0086B3;}
 
 /* Box */
 .box {
-  width: 1000px;
+  width: 800px;
   align: center;
   margin: 16px auto;
   background-color: #ffffe6;
