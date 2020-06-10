@@ -13,6 +13,7 @@ a[href]:hover {text-decoration: underline;}
 
 h1 {font-size: 200%; margin: 0; background: #ffbc00; font-family: Spectral;}
 h2 {font-size: 130%; margin: 0; margin-top: 1em; font-family: Spectral;}
+h3 {font-size: 120%; margin: 0; margin-top: 1em; margin-bottom: 0em; font-family: Spectral;}
 
 p {margin-top: 0.6em; margin-bottom: 0;}
 
@@ -47,6 +48,10 @@ ul ul {margin-top: 0; margin-bottom: 0;}
 
 .abstract {color:gray; margin-left:1em}
 
+/* Other lists */
+.smalllist {padding:0; margin:0;}
+.smalllist li {margin-top: .5em; list-style-type: none; list-style-position: inside; margin-left: 1em;}
+
 /* Misc */
 .person {color: #0086B3;}
 
@@ -58,3 +63,5 @@ ul ul {margin-top: 0; margin-bottom: 0;}
   background-color: #ffffe6;
   padding: 20px;
 }
+
+.centered {text-align: center;}

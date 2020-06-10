@@ -20,15 +20,17 @@
   <h1>Matt Amy</h1>
 
   <p>
+  <div style="display:inline-block; vertical-align:top;">
+    <img src="Assets/profile.png" title="Matt Amy" style="width:256px;height:auto;"/>
+  </div>
+  <div style="display:inline-block;">
   AARMS Postdoctoral Fellow<br>
   <a href="https://mathstat.dal.ca">Department of Mathematics and Statistics</a><br>
   <a href="https://www.dal.ca/">Dalhousie University</a><br>
   <a href="https://scholar.google.ca/citations?user=1XgGNJQAAAAJ&hl=en"><img src="Assets/scholar.svg" alt="alt text" title="Google scholar" style="width:20px;height:20px;"/></a>
   <a href="https://github.com/meamy"><img src="Assets/github.svg" alt="alt text" title="github" style="width:20px;height:20px;"/></a>
-  <p>
 
-  <h2>Contact</h2>
-  <p>
+  <h3>Contact</h3>
   <table>
     <tr>
       <td align=right>Email:&nbsp;&nbsp;</td>
@@ -54,7 +56,7 @@
       <td>B3H 4R2</td>
     </tr>
   </table>
-  </p>
+  </div>
 
   <h2>About</h2>
 
@@ -70,7 +72,9 @@
 		<em>staq -- A full-stack quantum processing toolkit</em>.<br>
 		With <a href="https://vsoftco.github.io/" class="person">V. Gheorghiu</a>.<br> 
 		Quantum Science and Technology, 2020.<br>
-		[<a href="https://arxiv.org/abs/1912.06070">arXiv</a>]
+    [<a href="Papers/staq.pdf">pdf</a>
+    /<a href="https://arxiv.org/abs/1912.06070">arXiv</a>
+    /<a href="https://doi.org/10.1088/2058-9565/ab9359">doi</a>]
 		<details>
 		<summary> More	</summary>
   		<p class="abstract">
@@ -79,15 +83,20 @@
 		"less is more", i.e. 'staq' achieves complex functionality via combining (piping) small tools, each of which performs a single task using the most advanced 
 		current state-of-the-art methods. We also provide a set of illustrative benchmarks.
 		</p>
+		<p class="centered">
+      <img src="Assets/staq.svg" alt="alt text" title="staq architecture" style="width:639px;height:auto;"/>
+		</p>
 	</details></li>
 	<li>
 		<em>Number-Theoretic Characterizations of Some Restricted Clifford+T Circuits</em>.<br>
-		With <a href="https://www.mathstat.dal.ca/~neilr/" class="person">N.J. Ross</a>
-    		and A.N. Glaudell.<br> Quantum 4, 2020.<br>
-		[<a href="https://arxiv.org/abs/1908.06076">arXiv</a>]
+		With <a href="https://www.mathstat.dal.ca/~neilr/" class="person">N.J. Ross</a> and A.N. Glaudell.<br> Quantum 4, 2020.<br>
+    [<a href="Papers/restricted.pdf">pdf</a>
+    /<a href="Slides/realcliffordt.pdf">slides</a>
+    /<a href="https://arxiv.org/abs/1908.06076">arXiv</a>
+    /<a href="https://doi.org/10.22331/q-2020-04-06-252">doi</a>]
 		<details>
 		<summary> More	</summary>
-  		<p class="abstract">
+ 		<p class="abstract">
 		Kliuchnikov, Maslov, and Mosca proved in 2012 that a $2 \times 2$ unitary matrix $V$ can be exactly represented by a single-qubit Clifford+$T$ circuit
 		if and only if the entries of $V$ belong to the ring $Z\left[1/\sqrt{2}, i\right]$. Later that year, Giles and Selinger showed that the same restriction applies to matrices
 		that can be exactly represented by a multi-qubit Clifford+$T$ circuit. These number-theoretic characterizations shed new light upon the structure of Clifford+$T$
@@ -96,6 +105,9 @@
 		$Z\left[1/\sqrt{2}\right]$, $Z\left[1/\sqrt{\mbox{-}2}\right]$, and $Z\left[1/2,i\right]$, and we prove that unitary matrices with entries in these rings
 		correspond to circuits over well-known universal gate sets. In each case, the desired gate set is obtained by extending the set of classical reversible
 		gates $\{X,CX,CCX\}$ with an analogue of the Hadamard gate and an optional phase gate.
+		</p>
+		<p class="centered">
+      <img src="Assets/restricted.svg" alt="alt text" title="Characterization of unitary matrix groups" style="width:512px;height:auto;"/>
 		</p>
 	</details></li>
 	<li>
@@ -116,6 +128,9 @@
 		language supporting the metaprogramming of circuit families. Our language and type system, built around a lightweight implementation of <em>sized types</em>, supports
 		subtyping over register sizes and is moreover type-safe. In particular, we prove that our system is strongly normalizing, and as such any well-typed metaQASM program
 		can be statically unrolled into a finite circuit.
+		</p>
+		<p class="centered">
+      <img src="Assets/metaqasm2.svg" alt="alt text" title="metaQASM dependent QFT" style="width:360px;height:auto;"/>
 		</p>
 	</details></li>
 	<li><a name="phdthesis"></a>
@@ -146,6 +161,9 @@
 		of correctness written in the proof assistant F$^\star$. The compiler is structured as a partial evaluator, allowing verification to be carried out significantly faster 
 		than previous results.
 		</p>
+		<p class="centered">
+      <img src="Assets/phd.svg" alt="alt text" title="Folding phases along paths" style="width:512px;height:auto;"/>
+		</p>
 	</details></li>
 	<li>
 		<em>T-count optimization and Reed-Muller codes</em>.<br>
@@ -167,6 +185,9 @@
 		is equivalent to minimum distance decoding in $\mathcal{RM}(n - k - 1, n)^*$, where $k$ is the highest power of $2$ dividing $m$.<br><br>
 		Note: Chapter 5 of <a href=#phdthesis>Formal Methods in Quantum Circuit Design</a> contains a slightly improved presentation of this result.
 		</p>
+		<p class="centered">
+      <img src="Assets/reedmuller.svg" alt="alt text" title="Circuit optimization by Reed-Muller decoding" style="width:360px;height:auto;"/>
+		</p>
 	</details></li>
 	<li>
 		<em>Strawberry fields: A software platform for photonic quantum computing</em>.<br>
@@ -187,6 +208,9 @@
 		and -- in the near future -- photonic quantum information processors. The library also contains examples of several paradigmatic algorithms, including teleportation,
 		(Gaussian) boson sampling, instantaneous quantum polynomial, Hamiltonian simulation, and variational quantum circuit optimization.
 		</p>
+		<p class="centered">
+      <img src="Assets/xanadu.svg" alt="alt text" title="Strawberry Fields architecture" style="width:512px;height:auto;"/>
+		</p>
 	</details></li>
 	<li>
 		<em>Towards large-scale functional verification of universal quantum circuits</em>.<br>
@@ -205,6 +229,9 @@
 		methods by performing automated verification of optimized Clifford+$T$ circuits with up to 100 qubits and thousands of $T$ gates, as well as the functional verification of
 		quantum algorithms using hundreds of qubits. Our experiments culminate in the automated verification of the Hidden Shift algorithm for a class of Boolean functions in a fraction
 		of the time it has taken recent algorithms to simulate.
+		</p>
+        <p class="centered">
+      <img src="Assets/pathsum2.svg" alt="alt text" title="Path sum reduction rules" style="width:640px;height:auto;"/>
 		</p>
 	</details></li>
 	<li>
@@ -227,6 +254,9 @@
 
 		<br><br>We further present an efficient heuristic algorithm for synthesizing circuits over CNOT and $Z$-basis rotations with small CNOT cost. Our experiments show a 23% reduction of
 		CNOT gates on average across a suite of Clifford+$T$ benchmark circuits, with a maximum reduction of 43%.
+		</p>
+        <p class="centered">
+      <img src="Assets/xorrp.svg" alt="alt text" title="Relationship between circuits, path sums and unitaries" style="width:256px;height:auto;"/>
 		</p>
 	</details></li>
 	<li>
@@ -252,6 +282,9 @@
   		presentation of unitary operators expressible over the {CNOT, $T$} gate
   		set as a corollary.
 		</p>
+        <p class="centered">
+      <img src="Assets/cnott.svg" alt="alt text" title="Complete relations for {CNOT,T} circuits" style="width:512px;height:auto;"/>
+		</p>
 	</details></li>
 	<li>
 		<em>Verified compilation of space-efficient reversible circuits</em>.<br>
@@ -273,6 +306,9 @@
 		F$^\star$ and compiles circuits that operate correctly with respect to the input program. Our compiler compiles the REVS language
 		[<a href="https://arxiv.org/abs/1510.00377">Parent, Roetteler & Svore 2015</a>] to
 		combinational reversible circuits with as few ancillary bits as possible, and provably cleans temporary values.
+		</p>
+        <p class="centered">
+      <img src="Assets/reverc.svg" alt="alt text" title="Architecture of ReVerC" style="width:512px;height:auto;"/>
 		</p>
 	</details></li>
 	<li>
@@ -309,6 +345,9 @@
 		attacks may be as much as $275$ billion times more expensive than one would
 		expect from the simple query analysis.
 		</p>
+		<p class="centered">
+      <img src="Assets/breakingsha.svg" alt="alt text" title="Estimating resources for a quantum pre-image search" style="width:512px;height:auto;"/>
+		</p>
 	</details></li>
 	<li>
 		<em>Technology mapping of reversible circuits to Clifford+T quantum circuits</em>.<br>
@@ -334,6 +373,9 @@
 		Experiments show that our approach leads
 		to a significant $T$-depth reduction of 54% on average.
 		</p>
+		<p class="centered">
+      <img src="Assets/mapping.svg" alt="alt text" title="Young subgroup synthesis" style="width:360px;height:auto;"/>
+		</p>
 	</details></li>
 	<li>
 		<em>Complexity of reversible circuits and their quantum implementations</em>.<br>
@@ -356,6 +398,9 @@
 		provides several new and tighter bounds.  Several synthesis approaches and
 		mapping schemes were used to calculate the bounds.
 		</p>
+		<p class="centered">
+      <img src="Assets/upperbounds.svg" alt="alt text" title="T-count optimized dirty ancilla Toffoli" style="width:512px;height:auto;"/>
+		</p>
 	</details></li>
 	<li>
 		<em>Polynomial-Time T-Depth Optimization of Clifford+T Circuits via Matroid Partitioning</em>.<br>
@@ -374,6 +419,9 @@
 		with the purpose of minimizing both $T$-count and $T$-depth. A major feature of the algorithm is the ability to re-synthesize circuits with ancillae at effectively no
 		additional cost, allowing space-time trade-offs to be easily explored. The tested benchmarks show up to 65.7% reduction in $T$-count and up to 87.6%
 		reduction in $T$-depth without ancillae, or 99.7% reduction in $T$-depth using ancillae.
+		</p>
+		<p class="centered">
+      <img src="Assets/tpar.svg" alt="alt text" title="Matroid partitioning on reversible sets of parities" style="width:360px;height:auto;"/>
 		</p>
 	</details></li>
 	<li>
@@ -399,6 +447,9 @@
 		best known decomposition for the Toffoli gate. Due to the size of the search space the
 		algorithm is only practical for small parameters, such as the number of qubits, and the number of gates in an optimal implementation.
 		</p>
+		<p class="centered">
+      <img src="Assets/mitm.svg" alt="alt text" title="T-depth 3 Toffoli" style="width:512px;height:auto;"/>
+		</p>
 	</details></li>
   </ul>
   </p>
@@ -406,6 +457,9 @@
   <h2>Talks</h2>
   <p>
   <ul class="plist">
+	<li><em>Number-Theoretic Characterizations of Some Restricted Clifford+T Circuits</em>.<br> Quantum Physics and Logic (QPL), Paris, France 2020.<br> 
+    [<a href="https://www.youtube.com/watch?v=G8Hspwjiwc4&fbclid=IwAR2FSW4FInQ5cnOSrPvirNIsr9Dvepr9aglwjK-ItZPhpBif7WGXb7cT3CE">talk</a>/<a href="Slides/realcliffordt.pdf">slides</a>]
+
 	<li><em>Type Systems for Quantum Metaprogramming</em>.<br> Reversible Computation (RC), Lausanne, Switzerland 2019.<br>[<a href="Slides/metaqasm.pdf">slides</a>]</li>
 
 	<li><em>On the CNOT-complexity of CNOT-PHASE circuits</em>.<br> 
@@ -425,7 +479,10 @@
 
   <h2>Academic service</h2>
   <p>
-  <ul class="plist">
+  <ul class="smalllist">
+	<li>Steering committee, Programming Languages for Quantum Computing (PLanQC)</a></li>
+	<li>Program chair, Programming Languages for Quantum Computing (PLanQC) 2021</a></li>
+	<li>Technical program committee, <a href="https://date-conference.com">Design, Automation and Test in Europe (DATE) 2021</a></li>
 	<li>Program committee, <a href="https://popl20.sigplan.org/home/planqc-2020">Programming Languages for Quantum Computing (PLanQC) 2020</a></li>
   </ul>
   </p>
