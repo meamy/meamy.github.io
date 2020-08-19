@@ -65,3 +65,34 @@ ul ul {margin-top: 0; margin-bottom: 0;}
 }
 
 .centered {text-align: center;}
+
+/* Atcat */
+.list {
+  padding:0; 
+  margin:0;
+}
+
+.list li {
+  margin-top: .5em; 
+  list-style-type: none; 
+  list-style-position: inside; 
+  margin-left: 1em; 
+  padding: 5px
+}
+
+details {
+  font: inherit;
+}
+
+details > summary {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/*
+details > summary::-webkit-details-marker {
+  display: none;
+}
+*/
