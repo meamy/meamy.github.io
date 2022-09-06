@@ -83,12 +83,48 @@
     <h2>Publications and preprints</h2>
     <p>
     <ul class="plist">
+    <li>
+        <em>Symbolic synthesis of Clifford circuits and beyond</em>.<br>
+        With Owen Bennett-Gibbs and 
+        <a href="https://www.mathstat.dal.ca/~neilr/" class="person">N.J. Ross</a>.<br> 
+         Proceedings of QPL 2022 (to appear).<br>
+        [<a href="Papers/extraction.pdf">pdf
+         </a>/ <a href="Slides/2022_qpl.pdf">slides
+         </a>/ <a href="https://arxiv.org/abs/2204.14205">arXiv</a>]
+        <details>
+          <summary>More</summary>
+          <p class="abstract">
+            Path sums are a convenient symbolic formalism for quantum operations with applications to
+            the simulation, optimization, and verification of quantum protocols. Unlike quantum 
+            circuits, path sums are not limited to unitary operations, but can express arbitrary 
+            linear ones. Two problems, therefore, naturally arise in the study of path sums: the
+            unitarity problem and the extraction problem. The former is the problem of deciding
+            whether a given path sum represents a unitary operator. The latter is the problem of
+            constructing a quantum circuit, given a path sum promised to represent a unitary
+            operator.<br>
+            We show that the unitarity problem is co-NP-hard in general, but that it is in P when
+            restricted to Clifford path sums. We then provide an algorithm to synthesize a Clifford
+            circuit from a unitary Clifford path sum. The circuits produced by our extraction algorithm
+            are of the form C1HC2, where C1 and C2 are Hadamard-free circuits and H is a layer of
+            Hadamard gates. We also provide a heuristic generalization of our extraction algorithm to
+            arbitrary path sums. While this algorithm is not guaranteed to succeed, it often succeeds
+            and typically produces natural looking circuits. Alongside applications to the optimization
+            and decompilation of quantum circuits, we demonstrate the capability of our algorithm by
+            synthesizing the standard quantum Fourier transform directly from a path sum.
+          </p>
+          <p class="centered">
+          <img src="Assets/extraction.svg" 
+               title="Circuit schematic for a general Clifford operator" 
+               style="width:512px;height:auto;"/>
+          </p>
+        </details>
+      </li>
       <li>
         <em>The phase/state duality in reversible circuit design</em>.<br>
         With <a href="https://www.mathstat.dal.ca/~neilr/" class="person">N.J. Ross</a>.<br> 
         Physical Review A 104, 052602, 2021.<br>
         [<a href="Papers/phasestate.pdf">pdf
-         </a>/ <a href="Slides/2020_iwqc.pdf">slides
+         </a>/ <a href="Slides/2022_bqit.pdf">slides
          </a>/ <a href="https://arxiv.org/abs/2105.13410">arXiv</a>
          </a>/ <a href="https://doi.org/10.1103/PhysRevA.104.052602">doi</a>]
         <details>
@@ -325,7 +361,7 @@
           <li>
             <em>Towards large-scale functional verification of universal quantum circuits</em>.<br>
             Proc. Quantum Physics & Logic (QPL), 2018.<br>
-            <b>Best student paper award</b>.<br>
+            <b>Best student paper</b>.<br>
             [<a href="Papers/pathsum.pdf">pdf
              </a>/ <a href="Slides/2018_qpl.pdf">slides
              </a>/ <a href="https://arxiv.org/abs/1805.06908">arXiv</a>
@@ -635,12 +671,24 @@
     <h2>Talks</h2>
     <p>
     <ul class="plist">
+      <li><em>Symbolic synthesis of Clifford circuits and beyond</em>.<br>
+      	Quantum Physics and Logic (QPL), Oxford, 2022.<br> 
+      	[<a href="Slides/2022_qpl.pdf">slides</a>]</li>
+      	
+      <li><em>Advanced oracle construction with the phase/state duality</em>.<br>
+      	Bristol Quantum Information Theory Seminar, Virtual, 2022.<br> 
+      	[<a href="Slides/2022_bqit.pdf">slides</a>]</li>
+      	
+      <li><em>Quantum computation and compilation</em>.<br>
+      	SFU CS Undergraduate Research Symposium, Burnaby, 2022.<br>
+      	[<a href="Slides/2022_ugrs.pdf">slides</a>]</li>
+      	
       <li><em>Formal Methods of Quantum Program Analysis</em>.<br> 
-        APS March Meeting, Chicago, USA, 2022.<br> Invited talk.<br> 
+        APS March Meeting, Chicago, USA, 2022.<br> <b>Invited talk</b>.<br> 
         [<a href="Slides/2022_march_meeting.pdf">slides</a>]</li>
 
       <li><em>Symbolic Analysis of Quantum Programs</em>.<br> 
-        IBM Compiler Seminar, Virtual, 2021.<br> 
+        IBM Compiler Seminar, Virtual, 2021.<br>
         [<a href="Slides/2021_ibm.pdf">slides</a>]</li>
 
       <li><em>The phase-state duality in reversible circuit design</em>.<br> 
@@ -667,7 +715,7 @@
           [<a href="Slides/2018_qpl.pdf">slides</a>]</li>
 
         <li><em>Verification in Quantum Computing</em>.<br> 
-          Design Automation for Quantum Computers, Irvine, 2017.<br> Invited talk.<br> 
+          Design Automation for Quantum Computers, Irvine, 2017.<br> <b>Invited talk</b>.<br> 
           [<a href="Slides/2017_iwqc.pdf">slides</a>]</li>
 
         <li><em>Verified compilation of space-efficient reversible circuits</em>.<br> 
@@ -689,9 +737,9 @@
     <h2>Teaching</h2>
     <p>
     <ul class="smalllist">
-      <li>CMPT 120 - <em>Introduction to Computing Science and Programming I</em>. Summer 2022.
-      <li>CSCI 3901 - <em>Software Development Concepts</em>. Winter 2021 (Dalhousie).
-      </li>
+      <li>CMPT 409/981 - <em><a href="f22/cmpt981/">Quantum Circuits and Compilation</a></em>. Fall 2022.</li>
+      <li>CMPT 120 - <em>Introduction to Computing Science and Programming I</em>. Summer 2022.</li>
+      <li>CSCI 3901 - <em>Software Development Concepts</em>. Winter 2021 (Dalhousie).</li>
     </ul>
     </p>
 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+  <title>CMPT 409/981: Quantum Circuits and Compilation</title>
+  <link rel="stylesheet" href="../../style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
+  <meta name="author" content="Matt Amy">
+  <meta name="keywords" content="Matthew Amy, quantum programming, quantum circuits">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+</head>
+
+<body>
+  <div class="course">
+    <h1>CMPT 409/981: Quantum Circuits and Compilation</h1>
+    
+    <img src="massive.png" 
+         title="A large reversible circuit" 
+         style="width:600px;height:auto;"/>
+
+    <p> 
+    Quantum computers in the gate model operate by executing quantum circuits. This course aims to broadly explore the techniques, foundational to modern, through which a high-level quantum algorithm may be compiled down to a circuit which can then be run on quantum hardware. It will cover the basics of gate model quantum computation then delve into different aspects of the quantum compilation stack, including the design and synthesis of quantum circuits, optimization of circuits, theoretical questions of efficiency, and the simulation and verification of quantum circuits.
+    </p>
+    
+    <h2>Course information</h2>
+    <hr>
+     <table>
+        <tr>
+          <td align=left><b>Instructor:</b>&nbsp;&nbsp;</td>
+          <td><a href="https://www.cs.sfu.ca/~meamy/">Matt Amy</a></td>
+        </tr>
+        <tr>
+          <td align=left><b>Email:</b>&nbsp;&nbsp;</td>
+          <td>matt_amy at sfu.ca</td>
+        </tr>
+        <tr>
+          <td align=left><b>Office:</b>&nbsp;&nbsp;</td>
+          <td>TASC1 9215</td>
+        </tr>
+        <tr>
+          <td align=left><b>Office hours:</b>&nbsp;&nbsp;</td>
+          <td>F 1:20-2:30 (after class)</td>
+        </tr>
+        <tr>
+          <td align=left><b>Classes:</b>&nbsp;&nbsp;</td>
+          <td>Tu 12:30-2:20 (AQ 5018)</td>
+        </tr>
+        <tr>
+          <td align=left></td>
+          <td>F 12:30-1:20 (BLU 10011)</td>
+        </tr>
+        <tr>
+          <td align=left><b>Textbook:</b>&nbsp;&nbsp;</td>
+          <td>None (see additional resources below)</td>
+        </tr>
+      </table>
+    <h2>Schedule</h2>
+	<table class="sched">
+		<colgroup>
+			<col style="text-align: right; width: 5em" />
+			<col span="3" />
+  		<tr>
+    			<th>Date</th>
+    			<th>Topic(s)</th>
+    			<th>Materials</th>
+    			<th>Readings/notes</th>
+  		</tr>
+  		<tr>
+    			<td>Sept. 9</td>
+    			<td>Introduction to course & QC</td>
+    			<td></td>
+    			<td></td>
+  		</tr>
+  		<tr>
+    			<td>13</td>
+    			<td>Linear algebra, postulates of QM</td>
+    			<td></td>
+    			<td></td>
+  		</tr>
+	</table>
+    <hr>
+    <h2>Topics</h2>
+    <hr>
+    	Topics will be gauged in part by class interest, but generally speaking will fit into these broad categories
+    	<ul>
+    		<li>Gate-model quantum computation</li>
+		<li>Circuit synthesis</li>
+		<li>Circuit optimization</li>
+		<li>Circuit routing</li>
+		<li>Quantum compilers</li>
+		<li>Intermediate representations</li>
+		<li>Verification</li>
+	</ul>
+    <h2>Prerequisites</h2>
+    <hr>
+    	The topics in this course involve a wide range of theoretical computer science and mathematical concepts. At minimum students should be comfortable with linear algebra (e.g. MATH 240) and algorithms and complexity (e.g. CMPT 307), but prior quantum of quantum information, abstract algebra, and theoretical computer science will be an asset.<br><br>
+    	
+    	If you haven't seen quantum computation before and are wondering if the course will be accessible to you, <a href="qcintro.pdf">read this crash course on quantum information</a>. We will cover this material quickly in the first week or two.
+    <h2>Course goals</h2>
+    <hr>
+    Given an instance of a quantum algorithm, understand the issues and costs involved with compiling it to either near-term or fault-tolerant hardware, and be able to compile it using modern techniques.
+    <h2>Evaluation</h2>
+    	<ul>
+    		<li> 40% course project </li>
+    		<li> 20% class participation </li>
+    		<li> 35% exercises (incl. presentations) </li>
+    		<li> 5% collaborative class notes </li>
+    	</ul>
+    <hr>
+<!--    <h2>Deadlines</h2>
+    <hr>
+-->
+    <h2>Additional resources</h2>
+    <hr>
+    Unfortunately, there's no "Dragon book" for quantum compilers just yet. However, there are many resources available for learning quantum computation. <b>Highly recommended if you're new to QC</b>.
+    	<ul>
+    		<li>Richard Josza's <a href="https://www.qi.damtp.cam.ac.uk/files/PartIIIQC/Part%202%20QIC%20lecturenotes.pdf">lecture notes</a> (Very comprehensive with extensive introduction to the basics)</li>
+    		<li>Ashley Montanaro's <a href="https://people.maths.bris.ac.uk/~csxam/teaching/qc2018/lecturenotes.pdf">lecture notes</a> (Short and sweet)
+    		<li>John Preskill's <a href="http://theory.caltech.edu/~preskill/ph219/index.html#lecture">lecture notes</a> (Good for fault tolerance reference, Physics oriented)</li>
+    		<li>Ronald de Wolf's <a href="https://arxiv.org/abs/1907.09415">lecture notes</a> (Haven't read but I've heard good things about)</li>
+    		<li>Nielsen & Chuang, Quantum Information and Computation (Classic reference textbook for quantum computation. We will mostly be interested in chapter 4. Not required)</li>
+    		<li>Mermin's Quantum Computer Science (A shorter and more accessible introduction to quantum computing for computer scientists)</li>
+    	</ul>
+  </div>
+</body>

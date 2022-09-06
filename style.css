@@ -64,6 +64,13 @@ ul ul {margin-top: 0; margin-bottom: 0;}
   padding: 20px;
 }
 
+.course {
+  align: center;
+  margin: 16px auto;
+  background-color: #ffffe6;
+  padding: 20px;
+}
+
 .centered {text-align: center;}
 
 /* Atcat */
@@ -90,6 +97,14 @@ details > summary {
   cursor: pointer;
   outline: none;
 }
+
+table.sched    { 
+  border: 1px solid black; 
+  width: 100%
+}
+table.sched th { border: 1px solid black; padding: 5px }
+table.sched td { border: 1px solid black; padding: 5px }
+table.sched td:nth-child(1) { text-align: end; }
 
 /*
 details > summary::-webkit-details-marker {
