@@ -84,10 +84,103 @@
     <p>
     <ul class="plist">
     <li>
+        <em>Complete equational theories for the sum-over-paths with unbalanced amplitudes</em>.<br>
+         Proc. Quantum Physics & Logic (QPL), 2023.<br>
+        [<a href="Papers/completeSOP.pdf">pdf
+         </a>/ <a href="Slides/2023_qpl.pdf">slides</a>
+         </a>/ <a href="https://arxiv.org/abs/2306.16369">arXiv</a>
+         </a>/ <a href="https://doi.org/10.4204/EPTCS.384.8">doi</a>]
+        <details>
+          <summary>More</summary>
+          <p class="abstract">
+          Vilmart recently gave a complete equational theory for the balanced sum-over-paths over 
+          Toffoli-Hadamard circuits, and by extension Clifford+$\mathrm{diag}(1, \zeta_{2^k})$ circuits. 
+          Their theory is based on the phase-free ZH-calculus which crucially omits the average rule of 
+          the full ZH-calculus, dis-allowing the local summation of amplitudes. Here we study the 
+          question of completeness in unbalanced path sums which naturally support local summation. We 
+          give a concrete syntax for the unbalanced sum-over-paths and show that, together with symbolic 
+          multilinear algebra and the interference rule, various formulations of the average and ortho 
+          rules of the ZH-calculus are sufficient to give complete equational theories over arbitrary 
+          rings and fields. 
+          </p>
+          <p class="centered">
+          <img src="Assets/completeSOP.svg" 
+               title="A complete calculus for unbalanced sums over fields" 
+               style="width:512px;height:auto;"/>
+          </p>
+        </details>
+      </li>
+    <li>
+        <em>Improved Synthesis of Toffoli-Hadamard Circuits</em>.<br>
+        With A. N Glaudell, S. Li, and
+        <a href="https://www.mathstat.dal.ca/~neilr/" class="person">N.J. Ross</a>.<br>
+         Proc. Reversible Computation (RC), 2023 (to appear).<br>
+        [<a href="Papers/impsyn.pdf">pdf
+         </a>/ <a href="https://arxiv.org/abs/2305.11305">arXiv</a>]
+        <details>
+          <summary>More</summary>
+          <p class="abstract">
+          The matrices that can be exactly represented by a circuit over the Toffoli-Hadamard gate 
+          set are the orthogonal matrices of the form $M/\sqrt{2}{}^k$, where $M$ is an integer matrix 
+          and $k$ is a nonnegative integer. The exact synthesis problem for this gate set is the 
+          problem of constructing a circuit for a given such matrix. Existing methods produce circuits 
+          consisting of $O(2^n\log(n)k)$ gates, where $n$ is the dimension of the matrix. In this 
+          paper, we provide two improved synthesis methods. First, we show that a technique introduced 
+          by Kliuchnikov in 2013 for Clifford+$T$ circuits can be straightforwardly adapted to 
+          Toffoli-Hadamard circuits, reducing the complexity of the synthesized circuit from 
+          $O(2^n\log(n)k)$ to $O(n^2\log(n)k)$. Then, we present an alternative synthesis method of 
+          similarly improved cost, but whose application is restricted to circuits on no more than 
+          three qubits. Our results also apply to orthogonal matrices over the dyadic fractions, which 
+          correspond to circuits using the 2-qubit gate $H\otimes H$, rather than the usual 
+          single-qubit Hadamard gate $H$.
+          </p>
+          <p class="centered">
+          <img src="Assets/impsyn.svg" 
+               title="All possible binary patterns for 8x8 integral Clifford+T unitaries" 
+               style="width:512px;height:auto;"/>
+          </p>
+        </details>
+      </li>
+    <li>
+        <em>Catalytic Embeddings of Quantum Circuits</em>.<br>
+        With M. Crawford, A. N Glaudell, M. L Macasieb, S. S Mendelson, and
+        <a href="https://www.mathstat.dal.ca/~neilr/" class="person">N.J. Ross</a>.<br>
+        [<a href="Papers/embeddings.pdf">pdf
+         </a>/ <a href="https://arxiv.org/abs/2305.07720">arXiv</a>]
+        <details>
+          <summary>More</summary>
+          <p class="abstract">
+          If a set $\mathbb{G}$ of quantum gates is countable, then the operators that can be 
+          exactly represented by a circuit over $\mathbb{G}$ form a strict subset of the 
+          collection of all unitary operators. When $\mathbb{G}$ is universal, one circumvents 
+          this limitation by resorting to repeated gate approximations: every occurrence of a 
+          gate which cannot be exactly represented over $\mathbb{G}$ is replaced by an 
+          approximating circuit. Here, we introduce catalytic embeddings, which provide an 
+          alternative to repeated gate approximations. With catalytic embeddings, approximations 
+          are relegated to the preparation of a fixed number of reusable resource states called 
+          catalysts. Because the catalysts only need to be prepared once, when catalytic embeddings 
+          exist they always produce shorter circuits, in the limit of increasing gate count and 
+          target precision. In the present paper, we lay the foundations of the theory of catalytic 
+          embeddings and we establish several of their structural properties. In addition, we 
+          provide methods to design catalytic embeddings, showing that their construction can be 
+          reduced to that of a single fixed matrix when the gates involved have entries in 
+          well-behaved rings of algebraic numbers. Finally, we showcase some concrete examples and 
+          applications. Notably, we show that catalytic embeddings generalize a technique previously 
+          used to implement the Quantum Fourier Transform over the Clifford+$T$ gate set with 
+          $O(n)$ gate approximations.
+          </p>
+          <p class="centered">
+          <img src="Assets/embeddings.svg" 
+               title="The embedded Quantum Fourier Transform" 
+               style="width:512px;height:auto;"/>
+          </p>
+        </details>
+      </li>
+    <li>
         <em>Symbolic synthesis of Clifford circuits and beyond</em>.<br>
-        With Owen Bennett-Gibbs and 
+        With O. Bennett-Gibbs and 
         <a href="https://www.mathstat.dal.ca/~neilr/" class="person">N.J. Ross</a>.<br> 
-         Proceedings of QPL 2022 (to appear).<br>
+         Proc. Quantum Physics & Logic (QPL), 2022 (to appear).<br>
         [<a href="Papers/extraction.pdf">pdf
          </a>/ <a href="Slides/2022_qpl.pdf">slides
          </a>/ <a href="https://arxiv.org/abs/2204.14205">arXiv</a>]
@@ -671,6 +764,10 @@
     <h2>Talks</h2>
     <p>
     <ul class="plist">
+      <li><em>Complete equational theories for the sum-over-paths with unbalanced amplitudes</em>.<br>
+      	Quantum Physics and Logic (QPL), Paris, 2023.<br> 
+      	[<a href="Slides/2023_qpl.pdf">slides</a>]</li>
+      	
       <li><em>Symbolic synthesis of Clifford circuits and beyond</em>.<br>
       	Quantum Physics and Logic (QPL), Oxford, 2022.<br> 
       	[<a href="https://youtu.be/cPlbyYVwDMk">video
@@ -766,6 +863,12 @@
     <h2>Academic service</h2>
     <p>
     <ul class="smalllist">
+      <li>Co-organizer &#38; PC member, 
+	<a>Programming Languages for Quantum Computing (PLanQC) 2023</a>.
+      </li>
+      <li>PC member, 
+	<a href="https://qce.quantum.ieee.org">IEEE International Conference on Quantum Computing and Engineering (QCE) 2023</a>.
+      </li>
       <li>Co-organizer &#38; PC member, 
 	<a href="https://icfp22.sigplan.org/home/planqc-2022?">Programming Languages for Quantum Computing (PLanQC) 2022</a>.
       </li>
