@@ -100,7 +100,7 @@ details > summary {
 
 table.sched    { 
   border: 1px solid black; 
-  width: 100%
+  width: 75%
 }
 table.sched th { border: 1px solid black; padding: 5px }
 table.sched td { border: 1px solid black; padding: 5px }
