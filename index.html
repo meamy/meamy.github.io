@@ -96,11 +96,66 @@
     <p>
     <ul class="plist">
     <li>
+     <em>Polynomial-Time Classical Simulation of Hidden Shift Circuits via Confluent Rewriting of Symbolic Sums</em>.<br>
+         With L. Stinchcombe.<br>
+        [<a href="Papers/hiddenshift.pdf">pdf
+         </a>/ <a href="https://arxiv.org/abs/2408.02778">arXiv</a>]
+        <details>
+          <summary>More</summary>
+          <p class="abstract">
+            Implementations of Roetteler's shifted bent function algorithm have
+in recent years been used to test and benchmark both classical simulation algorithms
+and quantum hardware.
+These circuits have many favorable properties, including a tunable amount of non-Clifford
+resources and a deterministic output, and moreover do not belong to any class of
+quantum circuits which is known to be efficiently simulable.
+We show that this family of circuits can in fact be simulated in 
+polynomial time via symbolic path integrals.
+We do so by endowing symbolic sums with a confluent rewriting system
+and show that this rewriting system suffices to reduce the circuit's path integral to the hidden shift in polynomial-time.
+We hence resolve an open conjecture about the efficient simulability of this class of circuits.
+          </p>
+          <p class="centered">
+          <img src="Assets/hiddenshift.svg" 
+               title="Roetteler's shifted bent function algorithm"
+               style="width:256px;height:auto;"/>
+          </p>
+        </details>
+    </li>
+    <li>
+        <em>A Sound and Complete Equational Theory for 3-Qubit Toffoli-Hadamard Circuits</em>.<br>
+         With
+        <a href="https://www.mathstat.dal.ca/~neilr/" class="person">N. J. Ross</a> and S. Wesley.<br>
+        Proc. Reversible Computation (RC), 2024.<br>
+        [<a href="Papers/cox.pdf">pdf
+         </a>/ <a href="https://arxiv.org/abs/2407.11152">arXiv
+         </a>/ <a href="https://doi.org/10.4204/EPTCS.406.1">doi</a>]
+        <details>
+          <summary>More</summary>
+          <p class="abstract">
+            We give a sound and complete equational theory for $3$-qubit quantum circuits over the Toffoli-Hadamard gate set $\{ X, CX, CCX, H\}$.
+That is, we introduce a collection of true equations among Toffoli-Hadamard circuits on three qubits that is sufficient to derive any other true equation between such circuits.
+To obtain this equational theory, we first consider circuits over the Toffoli-$K$ gate set $\{ X, CX, CCX, K\}$, where $K=H\otimes H$.
+The Toffoli-Hadamard and Toffoli-$K$ gate sets appear similar, but they are crucially different on exactly three qubits.
+Indeed, in this case, the former generates an infinite group of operators, while the latter generates the finite group of automorphisms of the well-known $E_8$ lattice.
+We take advantage of this fact, and of the theory of automorphism groups of lattices, to obtain a sound and complete collection of equations for Toffoli-$K$ circuits.
+We then extend this equational theory to one for Toffoli-Hadamard circuits by leveraging prior work of Li \textit{et al.} on Toffoli-Hadamard operators.
+          </p>
+          <p class="centered">
+          <img src="Assets/cox.svg" 
+               title="Sequence of Tietze transformations from the Coxeter to Circuit presentation of E8"
+               style="width:512px;height:auto;"/>
+          </p>
+        </details>
+    </li>
+    <li>
         <em>Exact synthesis of multiqubit Clifford-cyclotomic circuits</em>.<br>
          With  A. N Glaudell, S. Kelso, W. Maxwell, S. S Mendelson, and
         <a href="https://www.mathstat.dal.ca/~neilr/" class="person">N. J. Ross</a>.<br>
+        Proc. Reversible Computation (RC), 2024.<br>
         [<a href="Papers/multiqubit.pdf">pdf
-         </a>/ <a href="https://arxiv.org/abs/2311.07741">arXiv</a>]
+         </a>/ <a href="https://arxiv.org/abs/2311.07741">arXiv
+         </a>/ <a href="https://doi.org/10.1007/978-3-031-62076-8_15">doi</a>]
         <details>
           <summary>More</summary>
           <p class="abstract">
@@ -114,18 +169,15 @@
         </details>
     </li>
     <li>
-        <em>Optimising T-count is NP-hard</em>.<br>
+        <em>Optimising quantum circuits is generally hard</em>.<br>
          With  <a href="https://vdwetering.name/" class="person">J. van de Wetering</a>.<br>
         [<a href="Papers/tcount.pdf">pdf
          </a>/ <a href="https://arxiv.org/abs/2310.05958">arXiv</a>]
         <details>
           <summary>More</summary>
           <p class="abstract">
-           In this short note we show that Boolean satisfiability reduces to finding the 
-           optimal number of T gates of a quantum circuit, and hence that optimising T-count 
-           is NP-hard. We show that the same argument extends to optimising the number of 
-           Toffoli gates in a reversible classical circuit, and we furthermore find an upper 
-           bound to the T-count problem of $\text{NP}^{\text{NQP}}$. 
+           In order for quantum computations to be done as efficiently as possible it is important to optimise the number of gates used in the underlying quantum circuits. In this paper we find that many gate optimisation problems for approximately universal quantum circuits are NP-hard. In particular, we show that optimising the T-count or T-depth in Clifford+T circuits, which are important metrics for the computational cost of executing fault-tolerant quantum computations, is NP-hard by reducing the problem to Boolean satisfiability. With a similar argument we show that optimising the number of CNOT gates or Hadamard gates in a Clifford+T circuit is also NP-hard. Again varying the same argument we also establish the hardness of optimising the number of Toffoli gates in a reversible classical circuit. We find an upper bound to the problems of T-count and Toffoli-count of $\text{NP}^{\text{NQP}}$.
+	Finally, we also show that for any non-Clifford gate $G$ it is NP-hard to optimise the $G$-count over the Clifford+$G$ gate set, where we only have to match the target unitary within some small distance in the operator norm. 
           </p>
           <p class="centered">
           <img src="Assets/tcount.svg" 
@@ -165,9 +217,10 @@
         <em>Improved Synthesis of Toffoli-Hadamard Circuits</em>.<br>
         With A. N Glaudell, S. Li, and
         <a href="https://www.mathstat.dal.ca/~neilr/" class="person">N.J. Ross</a>.<br>
-         Proc. Reversible Computation (RC), 2023 (to appear).<br>
+         Proc. Reversible Computation (RC), 2023.<br>
         [<a href="Papers/impsyn.pdf">pdf
-         </a>/ <a href="https://arxiv.org/abs/2305.11305">arXiv</a>]
+         </a>/ <a href="https://arxiv.org/abs/2305.11305">arXiv
+         </a>/ <a href="https://doi.org/10.1007/978-3-031-38100-3_12">doi</a>]
         <details>
           <summary>More</summary>
           <p class="abstract">
@@ -916,6 +969,12 @@
     <h2>Academic service</h2>
     <p>
     <ul class="smalllist">
+      <li>Co-organizer, 
+	Programming Languages for Quantum Computing (PLanQC) 2025.
+      </li>
+      <li>Co-organizer,
+        <a href="https://qce.quantum.ieee.org/2024/program/workshops-abstracts/#wks19">IEEE Quantum Week Workshop on Distributed Quantum Computing: Algorithms, Networks, Software, and Applications (WKS19) 2024.
+        </a> 
       <li>Co-organizer,
         <a href="https://www.birs.ca/events/2024/5-day-workshops/24w5307">BIRS workshop on Quantum Circuit Design Automation (24w5307) 2024.
         </a> 
